@@ -9,5 +9,8 @@ public class PurchaseLog : MonoBehaviour
     public void StartAutoCookie()
     {
         autoCookie.SetActive(true);
+        GlobalCash.cashCount -= GlobalBaker.bakerValue;
+        GlobalBaker.bakerValue *= 2;
+        GlobalBaker.turnOffButton = true;
     }
 }
