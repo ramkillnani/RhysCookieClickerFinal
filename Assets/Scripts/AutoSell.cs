@@ -26,7 +26,7 @@ public class AutoSell : MonoBehaviour
     {
         if(GlobalCookies.cookieCount == 0)
         {
-            //we can't do anything
+            sellingCookie = false;
         }
         else
         {

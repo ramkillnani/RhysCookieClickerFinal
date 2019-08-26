@@ -10,6 +10,9 @@ public class PurchaseLog : MonoBehaviour
 
     public void StartAutoCookie()
     {
+        GlobalShop.turnOffButton = true;
+        GlobalBaker.turnOffButton = true;
+
         playSound.Play();
         autoCookie.SetActive(true);
         GlobalCash.cashCount -= GlobalBaker.bakerValue;
@@ -21,6 +24,9 @@ public class PurchaseLog : MonoBehaviour
 
     public void StartAutoSell()
     {
+        GlobalShop.turnOffButton = true;
+        GlobalBaker.turnOffButton = true;
+
         playSound.Play();
         autoSell.SetActive(true);
         GlobalCash.cashCount -= GlobalShop.shopValue;

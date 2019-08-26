@@ -10,7 +10,7 @@ public class GlobalShop : MonoBehaviour
     public GameObject realButton;
     public GameObject realText;
     public int currentCash;
-    public static int shopValue = 10;
+    public static int shopValue = 20;
     public static bool turnOffButton = false;
     public GameObject shopStats;
     public static int numberOfShops;
@@ -34,8 +34,8 @@ public class GlobalShop : MonoBehaviour
 
         if (turnOffButton == true)
         {
-            realButton.SetActive(false);
             fakeButton.SetActive(true);
+            realButton.SetActive(false);
             turnOffButton = false;
         }
     }

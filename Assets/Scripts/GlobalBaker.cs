@@ -10,7 +10,7 @@ public class GlobalBaker : MonoBehaviour
     public GameObject realButton;
     public GameObject realText;
     public int currentCash;
-    public static int bakerValue = 10;
+    public static int bakerValue = 20;
     public static bool turnOffButton = false;
     public GameObject bakerStats;
     public static int numberOfBakers;
@@ -34,8 +34,8 @@ public class GlobalBaker : MonoBehaviour
 
         if (turnOffButton == true)
         {
-            realButton.SetActive(false);
             fakeButton.SetActive(true);
+            realButton.SetActive(false);
             turnOffButton = false;
         }
     }
